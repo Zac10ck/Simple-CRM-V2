@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<configuration date="2018/03/06" author="e.World Technology Ltd.">
+  <project id="{3FC7CB86-1F85-46A6-9781-36E2788B8DB5}" file="" name="project1" product="PHPMaker" version="14.0" datetime="2018/03/06 23:50:40" languagefolder="phplang" userlevel="-2,&quot;Anonymous&quot;,0;">
+    <table id="client" name="client" caption="client" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="client_comp" name="client_comp" caption="client comp" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="client_details" name="client_details" caption="client details" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="dar" name="dar" caption="dar" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="dar_act_req" name="dar_act_req" caption="dar act req" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="dar_view_comp" name="dar_view_comp" caption="dar view comp" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+    <table id="users" name="users" caption="users" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1" />
+  </project>
+</configuration>

@@ -177,7 +177,7 @@
 <!-- <body background="/images/bg1.jpg">
  -->
 
-    <body background="/boot/bg1.jpg"  >
+    <body background="/simple/bd1.jpg" hight="100%" width="100%"  >
 
 
         <div class="wrapper">

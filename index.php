@@ -170,14 +170,39 @@
 
             .wrapper{ width: 350px; padding: 50px; }
 
+
+
+
+            body   
+{       
+   background-image:url('/simple/bd1.jpg');
+background-repeat:no-repeat;
+background-size:auto;
+ background-position:100% top;
+
+    background-attachment: auto;
+
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover; 
+/*width: auto;            
+    height:auto; */      
+    /*margin-left: auto;      
+    margin-right: auto; */ 
+}   
+
+
+/*Updated the CSS properties for the background image issue is fixed in Web view in desktop but need to fix in mobile view 
+*/
         </style>
 
     </head>
 
+<body>
 <!-- <body background="/images/bg1.jpg">
  -->
-
-    <body background="/simple/bd1.jpg" hight="100%" width="100%"  >   <!-- // need to update the image path accordingly to diaplay the picture in the background  -->
+<!-- 
+    <body background="/simple/bd1.jpg"   width:"100%";    height: "auto;"  > -->   <!-- // need to update the image path accordingly to diaplay the picture in the background  -->
 
 
         <div class="wrapper">
@@ -185,6 +210,11 @@
             <h2>Login</h2>
 <!-- <body bgbackground="\dash_files\backimg.jpg">
  --><!-- 
+
+
+
+
+
 <
 
             <!-- <p>Please fill in your credentials to login.</p> -->

@@ -50,7 +50,7 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="reports/index.php">Settings</a>
+            <a class="nav-link" href="reports/index.php"><b>Reports</b></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="mailto:abin.abraham@unisissolutions.com?Subject=Unisis%20CRM">Email</a>

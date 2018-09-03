@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 18, 2018 at 03:48 PM
+-- Generation Time: Sep 03, 2018 at 09:51 PM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.1.18
 
@@ -236,7 +236,7 @@ CREATE TABLE `dar` (
   `activity` varchar(255) DEFAULT NULL,
   `req` varchar(255) DEFAULT NULL,
   `followup` varchar(255) DEFAULT NULL,
-  `remark` varchar(255) DEFAULT NULL
+  `remark` varchar(1000) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 --
@@ -1611,7 +1611,19 @@ INSERT INTO `dar` (`userid`, `date`, `client`, `person`, `desig`, `phone`, `emai
 (1767, '2018-07-17', 'Al Jafel International Hospital', 'Dr Ahmed', 'Quality Manager', '0', '', 'CR Follow up', NULL, 'No', 'Signed the CR Document.explained the featres we are going to add and inform him it will be charged next time,he told these are the main feature mandatory in any HIMS S/W'),
 (1768, '2018-07-17', 'Aber Clinic', 'Mr.Muhammed Shabeer	', 'IT manager', '596920345', '', 'Follow up', NULL, '', 'They are using Netco and he is happy with the support.if he get a chnace they will change the application and he will refer us as well.'),
 (1769, '2018-07-17', 'Abyat Medical center', 'Mr.Mohammed	', 'IT manager', '553675957', '', 'Follow up', NULL, 'Yes', 'No requirement'),
-(1770, '2018-07-17', 'Al Rahamah MC', 'Mr.Mutkwakil', 'Procurement Manager', '532769629', '', 'Follow up', NULL, 'Yes', 'Have to be in followup');
+(1770, '2018-07-17', 'Al Rahamah MC', 'Mr.Mutkwakil', 'Procurement Manager', '532769629', '', 'Follow up', NULL, 'Yes', 'Have to be in followup'),
+(1771, '2018-08-09', 'Thuriah Medical Center', 'Ramy Mokhtar', 'IT and Marketign Manager', '966562668282', 'ramy@thuriah.com.sa', 'Sales Pitching', NULL, 'Yes', 'They are Specialized IVF clinic,currently using Medinf (german S/W, Insta HIMS and Focues ERP for Back End) purchased s/w 3 years back - asked for demo after Eid -It manager is on vaction -current contact Anoog Chandran (+96650800 3268 - email - Anoog@thuriah.com.sa)'),
+(1772, '2018-08-09', 'Medica Clinic', 'Mr.Muhammed Muddasir', 'IT Manager ', '551547920', 'mmuddasir@medica.com.sa', 'Follow up meeting - session 3', NULL, 'Yes', 'I had Give the priliminary demo session now they want to see more in depth demo of the s/w in backend modules and the clinical modules,He will check the schedule of the Team and will update the Date for the Demo Next week(probaility by Monday or Tuesday ) '),
+(1773, '2018-09-02', 'Dar Al Shefa Hospital', 'Mr.Abdullatif Ahmed', ' IT Manager ', '590496608', 'eng.abdullatif@daralshefa.com', ' Followup', NULL, 'Yes', 'He knows about the system and need a word with the management before proceeding because from the previous interaction the pricing the way high'),
+(1774, '2018-09-02', 'Unisis', 'Abin ', '', '0', '', 'Office activites', NULL, 'No', 'Report creating,other office activities'),
+(1775, '2018-09-02', 'Tera', 'Osamah Al Mudhi', 'Generakl manager ', '540074400', 'Mudhios@teras.sa', 'Business Meeting ', NULL, 'Yes', 'He have some high influancial contacts and one of his uncles friend is a partner in few medical centers,Need further meeting and need to give sales comminsions if things are working well,he can recommend Medas Systems to the Top Management'),
+(1776, '2018-09-02', 'Al Rahamah MC', 'Mr.Mutkwakil', 'IT Manager', '532769629', '', 'Followup', NULL, 'Yes', 'Theres a financial Crises will infrom the status later'),
+(1778, '2018-09-03', 'Air Medical', 'Mohammed Al- Rasheedi', 'Director', '966555021808', 'malrasheedi@phihelico.com', 'Cold Call', NULL, 'Yes', 'Currently they are facing some finacnial Crisis and bills are pending from Saudi Red Crusent,he told he can give some good refernces and contacts- send the company Profile '),
+(1779, '2018-09-03', 'Saudi Establisment For Safety Equipments', 'Nemie Maranag', 'Admin Manager', '96614761525', 'nemie@seseksa.com', 'Cold Call', NULL, 'No', 'Currently No requirement- They have software company '),
+(1780, '2018-09-03', 'Smart Med', 'Nezar Al- Jounaid', 'IT Manager', '543655608', 'n.aljounaid@smartmed.sa', 'Cold Call', NULL, 'Yes', 'They are into Private Home care and Medical services-currently using custome S/W-asked to send the Medas S/W Details'),
+(1781, '2018-09-03', 'ARCOM', 'Abdul Haleem M. Hassan', 'CFO', '966114729390', 'finance@arcomksa.com', 'Cold Call', NULL, 'Yes', 'They are into the Trading- currently using POS sys with backend modules - no plans to change because of the Financial Issues -will infrom if they are chaning the system'),
+(1782, '2018-09-03', 'El Seif Engineering Contracting Co.', 'Glen Tigcal', 'Procurement and Supply Chain Manager', '966534495359', 'g.tigcal@el-seif.com.sa', 'Cold Call', NULL, 'Yes', 'Using Oracle Cloud- theres a window for the Trading activities which is a Frequent on but needed Vendor Registeration inorder to get Qualified '),
+(1783, '2018-09-03', 'UR Consultant Advanced Dental care', 'Dr Hanni ', 'Director', '966112407428', '', 'Cold Call', NULL, 'Yes', 'currently using Dentac-planning to change the system- Looking for Very Low budjet dental software- asked to come after taking appointment');
 
 -- --------------------------------------------------------
 
@@ -1643,7 +1655,7 @@ CREATE TABLE `dar_view_comp` (
 ,`activity` varchar(255)
 ,`req` varchar(255)
 ,`followup` varchar(255)
-,`remark` varchar(255)
+,`remark` varchar(1000)
 );
 
 -- --------------------------------------------------------
@@ -1753,7 +1765,7 @@ ALTER TABLE `client_old`
 -- AUTO_INCREMENT for table `dar`
 --
 ALTER TABLE `dar`
-  MODIFY `userid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1771;
+  MODIFY `userid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1784;
 
 --
 -- AUTO_INCREMENT for table `users`
